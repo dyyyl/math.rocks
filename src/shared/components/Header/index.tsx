@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderContainer from './HeaderContainer';
 import Logo from './Logo';
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <HeaderContainer>
       <Logo />

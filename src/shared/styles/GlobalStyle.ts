@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     /* Colors */
     --primary: #050505;
     --secondary: #454545;
+    --brand: #FF4136;
 
     /* Fonts */
     --sans: 'Inter', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',

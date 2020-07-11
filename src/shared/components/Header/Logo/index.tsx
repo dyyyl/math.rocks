@@ -8,7 +8,7 @@ const Logo = () => {
   return (
     <LogoContainer>
       <Link href="/" passHref>
-        <LogoLink>ALGEBRAIC AS FUCK</LogoLink>
+        <LogoLink>ふざけるな</LogoLink>
       </Link>
     </LogoContainer>
   );

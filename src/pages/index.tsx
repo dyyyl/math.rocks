@@ -1,3 +1,5 @@
+import Latex from 'react-latex';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
@@ -9,27 +11,46 @@ import {
   Title,
 } from 'shared/components/Typography';
 
-const Home = (): JSX.Element => {
+interface Props {
+  title: string;
+  description: string;
+}
+
+const Index: NextPage<Props> = ({ title, description }: Props) => {
   return (
     <>
       <Head>
-        <title>ALGEBRAIC AS FUCK</title>
+        <title>{title}</title>
       </Head>
 
       <main>
-        <Title>ALGEBRAIC AS FUCK</Title>
-        <Subtitle>ALGEBRAIC AS FUCK</Subtitle>
-        <Heading>ALGEBRAIC AS FUCK</Heading>
-        <Subheading>ALGEBRAIC AS FUCK</Subheading>
+        <Title>{title.toUpperCase()}</Title>
+        <Subtitle>{title.toUpperCase()}</Subtitle>
+        <Heading>{title.toUpperCase()}K</Heading>
+        <Subheading>{title.toUpperCase()}</Subheading>
+        <Copy>{description}</Copy>
+
+        <Title>
+          <Latex displayMode>$$\LaTeX$$</Latex>
+        </Title>
+
         <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          aliquam temporibus numquam excepturi perspiciatis, minus voluptates
-          repudiandae. Odio, dolor voluptatem quia reiciendis amet id, culpa qui
-          nobis nihil dolores quo!
+          <Latex displayMode>$$(3\times 4) \div (5-3)^2$$</Latex>
         </Copy>
       </main>
     </>
   );
 };
 
-export default Home;
+export async function getStaticProps() {
+  const configData = await import(`../../siteconfig.json`);
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.description,
+    },
+  };
+}
+
+export default Index;

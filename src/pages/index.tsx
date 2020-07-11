@@ -36,7 +36,7 @@ const Index: NextPage<Props> = ({ title, description }: Props) => {
         <Subheading>{title.toUpperCase()}</Subheading>
         <Copy>{description}</Copy>
 
-        <Title>
+        <Title style={{ fontSize: '3rem' }}>
           <Latex displayMode>$$\LaTeX$$</Latex>
         </Title>
 

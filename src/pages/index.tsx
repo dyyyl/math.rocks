@@ -17,6 +17,12 @@ interface Props {
 }
 
 const Index: NextPage<Props> = ({ title, description }: Props) => {
+  const [a, b] = [5, 6];
+
+  const fraction = `$$\\frac{${a}}{${b}} \\times \\frac{4}{11} = ?$$`;
+
+  const sum = `$$\\sum_{k=1}^n 4n$$`;
+
   return (
     <>
       <Head>
@@ -35,7 +41,15 @@ const Index: NextPage<Props> = ({ title, description }: Props) => {
         </Title>
 
         <Copy>
-          <Latex displayMode>$$(3\times 4) \div (5-3)^2$$</Latex>
+          <Latex displayMode>$$(3\times 4) \div (5-3)^2 = ?$$</Latex>
+        </Copy>
+
+        <Copy>
+          <Latex displayMode>{fraction}</Latex>
+        </Copy>
+
+        <Copy>
+          <Latex displayMode>{sum}</Latex>
         </Copy>
       </main>
     </>

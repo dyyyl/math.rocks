@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"
+            href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css"
             rel="stylesheet"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />

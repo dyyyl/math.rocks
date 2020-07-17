@@ -3,12 +3,12 @@ import React from 'react';
 
 import { Title } from 'shared/components/Typography';
 
-const Post: NextPage = () => {
+const ShapeOfNumbersPost: NextPage = () => {
   return (
     <div>
-      <Title>A FUCKING PAGE</Title>
+      <Title>Learning about the shape of numbers</Title>
     </div>
   );
 };
 
-export default Post;
+export default ShapeOfNumbersPost;

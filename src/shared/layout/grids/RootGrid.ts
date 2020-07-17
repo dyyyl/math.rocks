@@ -5,7 +5,7 @@ const RootGrid = styled.div`
   max-height: 100vh;
 
   display: grid;
-  grid-template-rows: 6.5rem auto;
+  grid-template-rows: 5rem auto;
 `;
 
 export default RootGrid;

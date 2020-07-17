@@ -14,6 +14,24 @@ const Index: NextPage<Props> = ({ title, description }: Props) => {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
+
+      <main
+        style={{
+          height: '100%',
+          display: 'grid',
+          placeItems: 'center',
+        }}
+      >
+        <p
+          style={{
+            fontFamily: 'Courier New',
+            fontWeight: 'bold',
+            fontSize: '1.25rem',
+          }}
+        >
+          Welcome, and enjoy your stay.
+        </p>
+      </main>
     </>
   );
 };

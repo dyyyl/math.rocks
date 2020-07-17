@@ -17,11 +17,6 @@ const LogoLink = styled.a`
     color: var(--brand);
   }
 
-  &:focus {
-    text-decoration: underline;
-    color: var(--brand);
-  }
-
   @media screen and (min-width: 500px) {
     font-size: 2.5rem;
   }

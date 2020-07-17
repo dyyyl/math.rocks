@@ -1,4 +1,4 @@
-import Document, {
+import NextDocument, {
   DocumentContext,
   Head,
   Html,
@@ -7,7 +7,7 @@ import Document, {
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-export default class MyDocument extends Document {
+export default class Document extends NextDocument {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
             sheet.collectStyles(<App {...props} />),
         });
 
-      const initialProps = await Document.getInitialProps(ctx);
+      const initialProps = await NextDocument.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: (
@@ -40,11 +40,13 @@ export default class MyDocument extends Document {
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-            rel="stylesheet"
+            rel="preload"
+            as="style"
           />
           <link
             href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css"
-            rel="stylesheet"
+            rel="preload"
+            as="style"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />

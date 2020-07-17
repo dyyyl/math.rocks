@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
+import useInterval from 'shared/hooks/useInterval';
 import getDateTime from 'shared/utils/getDateTime';
 
 import DateTimeContainer from './DateTimeContainer';
@@ -7,11 +8,10 @@ import DateTimeContainer from './DateTimeContainer';
 const DateTime = (): JSX.Element => {
   const [dateTime, setDateTime] = useState(getDateTime());
 
-  useEffect(() => {
-    const currentDateTime = getDateTime();
+  useInterval(() => {
+    setDateTime(getDateTime());
+  }, 25000);
 
-    setDateTime(currentDateTime);
-  }, []);
   return (
     <DateTimeContainer>
       <b>

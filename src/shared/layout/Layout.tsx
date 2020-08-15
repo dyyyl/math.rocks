@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Footer from 'shared/components/Footer';
 import Header from 'shared/components/Header';
 import Navigation from 'shared/components/Navigation';
 
 import ApplicationGrid from './grids/ApplicationGrid';
+import ContentGrid from './grids/ContentGrid';
 import RootGrid from './grids/RootGrid';
 
 interface Props {
@@ -16,7 +18,10 @@ const Layout = ({ children }: Props) => {
       <Header />
       <ApplicationGrid>
         <Navigation />
-        {children}
+        <ContentGrid>
+          {children}
+          <Footer />
+        </ContentGrid>
       </ApplicationGrid>
     </RootGrid>
   );

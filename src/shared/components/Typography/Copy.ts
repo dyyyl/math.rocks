@@ -7,6 +7,7 @@ const Copy = styled.p`
   color: var(--primary);
 
   letter-spacing: 0.05rem;
+  line-height: 1.8rem;
 `;
 
 export default Copy;

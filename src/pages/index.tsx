@@ -17,7 +17,7 @@ const Index: NextPage<Props> = ({ title, description }: Props) => {
 
       <main
         style={{
-          height: '100%',
+          height: 'calc(100% - 5rem)',
           display: 'grid',
           placeItems: 'center',
         }}

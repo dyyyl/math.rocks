@@ -21,89 +21,67 @@ const ShapeOfNumbersPost: NextPage = () => {
     <ArticleGrid>
       <Title>Learning about the shape of numbers</Title>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
 
-      <section>
-        <Copy>
-          <Latex displayMode>$$(3\times 4) \div (5-3)^2 = ?$$</Latex>
-        </Copy>
-      </section>
+      <Copy>
+        <Latex displayMode>$$(3\times 4) \div (5-3)^2 = ?$$</Latex>
+      </Copy>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
 
-      <section>
-        <Copy>
-          <Latex displayMode>{fraction}</Latex>
-        </Copy>
-      </section>
+      <Copy>
+        <Latex displayMode>{fraction}</Latex>
+      </Copy>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
 
-      <section>
-        <Copy>
-          <Latex displayMode>{sigma}</Latex>
-        </Copy>
-      </section>
+      <Copy>
+        <Latex displayMode>{sigma}</Latex>
+      </Copy>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
 
-      <section>
-        <Copy>
-          <Latex displayMode>{quadratic}</Latex>
-        </Copy>
-      </section>
+      <Copy>
+        <Latex displayMode>{quadratic}</Latex>
+      </Copy>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
 
-      <section>
-        <Copy>
-          <Latex displayMode>{trinomial}</Latex>
-        </Copy>
-      </section>
+      <Copy>
+        <Latex displayMode>{trinomial}</Latex>
+      </Copy>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
 
       <Copy>
         <Latex displayMode>{quadratic}</Latex>
@@ -115,14 +93,12 @@ const ShapeOfNumbersPost: NextPage = () => {
         <Latex displayMode>{trinomial}</Latex>
       </Copy>
 
-      <section>
-        <Copy>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-          tempore dignissimos ullam earum voluptates doloremque porro eaque.
-          Nemo rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-          repellendus?
-        </Copy>
-      </section>
+      <Copy>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
+        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
+        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
+        repellendus?
+      </Copy>
     </ArticleGrid>
   );
 };

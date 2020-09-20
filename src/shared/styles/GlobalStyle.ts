@@ -27,6 +27,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: var(--sans);
   }
+
+  .katex .katex-mathml {
+    position: fixed;
+  }
 `;
 
 export default GlobalStyle;

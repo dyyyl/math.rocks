@@ -22,8 +22,13 @@ const Navigation = (): JSX.Element => {
             <InternalLink>Whitehead&apos;s Introduction</InternalLink>
           </Link>
         </NavigationItem>
-        <CandyStripe />
+        <NavigationItem>
+          <Link href="/posts/derivative-notation">
+            <InternalLink>On Derivative Notation</InternalLink>
+          </Link>
+        </NavigationItem>
       </NavigationItems>
+      <CandyStripe />
     </NavigationContainer>
   );
 };

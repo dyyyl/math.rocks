@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 
 import Footer from 'shared/components/Footer';
@@ -14,16 +15,21 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <RootGrid>
-      <Header />
-      <ApplicationGrid>
-        <Navigation />
-        <ContentGrid>
-          {children}
-          <Footer />
-        </ContentGrid>
-      </ApplicationGrid>
-    </RootGrid>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <RootGrid>
+        <Header />
+        <ApplicationGrid>
+          <Navigation />
+          <ContentGrid>
+            {children}
+            <Footer />
+          </ContentGrid>
+        </ApplicationGrid>
+      </RootGrid>
+    </>
   );
 };
 

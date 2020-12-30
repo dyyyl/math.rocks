@@ -21,12 +21,7 @@ const ShapeOfNumbersPost: NextPage = () => {
     <ArticleGrid>
       <Title>Learning about the shape of numbers</Title>
 
-      <Copy>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe
-        tempore dignissimos ullam earum voluptates doloremque porro eaque. Nemo
-        rem harum voluptas tempora. Non nesciunt quod cum nemo natus
-        repellendus?
-      </Copy>
+      <Copy>TEST POST PLZ IGNORE</Copy>
 
       <Copy>
         <Latex displayMode>$$(3\times 4) \div (5-3)^2 = ?$$</Latex>

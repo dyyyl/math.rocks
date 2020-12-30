@@ -1,19 +1,19 @@
-import sanitizeDateTime from './sanitizeDateTime';
+import padDateTime from './padDateTime';
 
 const getDateTime = () => {
   const currentDate = new Date();
 
-  const date = sanitizeDateTime(currentDate.getDate());
+  const date = padDateTime(currentDate.getDate());
 
-  const month = sanitizeDateTime(currentDate.getMonth() + 1);
+  const month = padDateTime(currentDate.getMonth() + 1);
 
   const year = currentDate.getFullYear();
 
   const dateString = `${date}/${month}/${year}`;
 
-  const hours = sanitizeDateTime(currentDate.getHours());
+  const hours = padDateTime(currentDate.getHours());
 
-  const minutes = sanitizeDateTime(currentDate.getMinutes());
+  const minutes = padDateTime(currentDate.getMinutes());
 
   const time = `${hours}:${minutes}`;
 

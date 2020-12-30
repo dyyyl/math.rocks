@@ -11,12 +11,13 @@
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write **/*.{js,ts,tsx}",
     "lint": "eslint . --ext ts --ext tsx --ext js",
+    "lint:staged": "npm-run-all lint format",
     "test": "jest",
-    "test-all": "npm-run-all type-check test"
+    "test:all": "npm-run-all type-check test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm-run-all lint:staged test:all"
     }
   },
   "lint-staged": {

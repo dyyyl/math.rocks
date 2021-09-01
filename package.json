@@ -29,7 +29,7 @@
     "*.{js,ts,tsx}": "prettier --write"
   },
   "dependencies": {
-    "next": "^10.0.4",
+    "next": "^11.1.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-latex": "^2.0.0",
